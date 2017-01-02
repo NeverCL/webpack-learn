@@ -56,8 +56,11 @@ webpack
 - without writing require
   - providePlugin
 
-- Exposing Global Variables
-  - todo!!!
+- externals
+  - externals: {
+        "react": "React",//所有require('react'),从全局变量React获取
+        "react-dom": "ReactDOM"//所有require('react-dom'),从全局变量ReactDOM获取
+    }
 
 - Hot Module Replacement
   - webpack-dev-server --hot --inline
